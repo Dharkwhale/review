@@ -19,7 +19,7 @@ const ProfileDropdown = () => {
   };
 
   return (
-    <div className="relative inline-block text-right">
+    <div className="relative inline-block text-right pb-10">
       <div className="flex items-center space-x-2 cursor-pointer" onClick={toggleDropdown}>
         {/* Circle Profile Image */}
         <img
@@ -93,53 +93,52 @@ const Navbar = () => {
         </form>
       </div>
 
-      {/* Right Section: Home Icon and Profile */}
+      {/* Right Section: Icons and Profile */}
       <div className="flex items-center gap-4">
         {/* Home Icon */}
         <div className="flex flex-col items-center">
           <img src={home} alt="Home" className="h-4 w-4 cursor-pointer" />
           <span className="text-sm text-gray-700">Home</span>
-        </div> 
+        </div>
         <div className="flex flex-col items-center">
-          <img src={dashboard} alt="Home" className="h-4 w-4 cursor-pointer" />
+          <img src={dashboard} alt="Dashboard" className="h-4 w-4 cursor-pointer" />
           <span className="text-sm text-gray-700">Dashboard</span>
         </div>
         <div className="flex flex-col items-center">
-          <img src={wallet} alt="Home" className="h-4 w-6 cursor-pointer" />
+          <img src={wallet} alt="Wallet" className="h-4 w-4 cursor-pointer" />
           <span className="text-sm text-gray-700">Wallet</span>
         </div>
         <div className="flex flex-col items-center">
-          <img src={plan} alt="Home" className="h-4 w-4 cursor-pointer" />
+          <img src={plan} alt="Plan" className="h-4 w-4 cursor-pointer" />
           <span className="text-sm text-gray-700">Plan</span>
         </div>
         <div className="flex flex-col items-center">
-          <img src={comission} alt="Home" className="h-4 w-4 cursor-pointer" />
+          <img src={comission} alt="Commission" className="h-4 w-4 cursor-pointer" />
           <span className="text-sm text-gray-700">Commission Of Life</span>
         </div>
+
+        {/* Divider */}
         <div className="w-[1px] h-6 bg-gray-300"></div>
-        
+
         {/* Subscribe Button */}
         <button className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition">
           Subscribe
         </button>
 
         <div className="flex flex-col items-center">
-          <img src={notification} alt="Home" className="h-4 w-4 cursor-pointer" />
+          <img src={notification} alt="Notification" className="h-4 w-4 cursor-pointer" />
           <span className="text-sm text-gray-700">Notification</span>
         </div>
 
         <div className="flex flex-col items-center">
-          <img src={carts} alt="Home" className="h-4 w-4 cursor-pointer" />
+          <img src={carts} alt="Carts" className="h-4 w-4 cursor-pointer" />
           <span className="text-sm text-gray-700">Carts</span>
         </div>
 
         <div className="flex flex-col items-center">
-          <img src={create} alt="Home" className="h-4 w-4 cursor-pointer" />
+          <img src={create} alt="Create" className="h-4 w-4 cursor-pointer" />
           <span className="text-sm text-gray-700">Create</span>
         </div>
-
-
-
 
         {/* Profile Dropdown */}
         <ProfileDropdown />
@@ -149,5 +148,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
 
