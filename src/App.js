@@ -1,17 +1,19 @@
 import React from 'react'
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
-import Hero from './components/Hero'
+import RightSection from './components/RightSection';
+
+
 
 function App() {
   return (
-    <div >
+    <div>
       <Navbar />
-      <div className='flex justify-between'>
-      <Sidebar />
-      <Hero />
+      <div className='flex'>
+        <Sidebar />
+        <RightSection/>
       </div>
-    
+      
     </div>
   );
 }
