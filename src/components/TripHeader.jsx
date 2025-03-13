@@ -9,10 +9,15 @@ const TripHeader = () => {
 <div className='pl-10 mt-32'>
   <div className='flex justify-between'>
    <div className='flex bg-[#FEF4E6] px-2 h-5 rounded-md shadow-sm border border-gray-200 text-xs'> 
-      <CiCalendar className='text-brown-700 text-xs'/>
-      <span className="">21 March 2024</span>
-      <MdArrowForward className='text-brown-700 text-xs'/>
-      <span className=''>21 April 2024</span>
+      <div className='flex items-center space-x-1'>
+        <CiCalendar className='text-brown-700 text-xs'/>
+        <span className="">21 March 2024</span>
+      </div>
+      <div className='flex items-center space-x-1'>
+        <MdArrowForward className='text-brown-700 text-xs'/>
+        <span className=''>21 April 2024</span>
+      </div>
+      
    </div>
     <div className='pr-10 flex items-center justify-between '>
       <div className="flex items-center justify-center w-40 mr-10 py-3 bg-blue-100  rounded-lg">
